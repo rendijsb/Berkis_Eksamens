@@ -11,42 +11,42 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Jaut1 extends JFrame implements ActionListener{
+public class Jaut4 extends JFrame implements ActionListener{
 	JFrame frame;
 	ImageIcon image;
 	JLabel displayField;
-	JButton b1=new JButton("while(){}do;");
-	JButton b2=new JButton("do{while();");
-	JButton b3=new JButton("do{}while();");
-	JButton b4=new JButton("do{}while;");
+	JButton b1=new JButton("1");
+	JButton b2=new JButton("3");
+	JButton b3=new JButton("2");
+	JButton b4=new JButton("∞");
 	JPanel panel=new JPanel();
 	String izvele;
-	Jaut1() {
+	Jaut4() {
 		frame = new JFrame();
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-			image = new ImageIcon(getClass().getResource("/bildes/Jaut1.png"));
+			image = new ImageIcon(getClass().getResource("/bildes/Jaut4.png"));
 			displayField = new JLabel(image);
 		
-			panel.setBounds(55, 577, 315, 113);
+			panel.setBounds(425, 450, 315, 113);
 
 		     
-        b1.setBounds(55, 377, 315, 113);
+        b1.setBounds(55, 450, 315, 113);
         b1.setOpaque(false);
         b1.setFont(new Font("Arial", Font.ITALIC, 30));
         
        
-        b2.setBounds(425, 377, 315, 113);
+        b2.setBounds(425, 450, 315, 113);
         b2.setOpaque(false);
         b2.setFont(new Font("Arial", Font.ITALIC, 30));
         
-        b3.setBounds(55, 577, 315, 113);
+        b3.setBounds(55, 600, 315, 113);
         b3.setOpaque(false);
         b3.setFont(new Font("Arial", Font.ITALIC, 30));
         
        
-        b4.setBounds(425, 577, 315, 113);
+        b4.setBounds(425, 600, 315, 113);
         b4.setOpaque(false);
         b4.setFont(new Font("Arial", Font.ITALIC, 30));
         
@@ -79,7 +79,7 @@ public class Jaut1 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
 	        frame.dispose();
-	        Jaut1 Jaut1 = new Jaut1();
+	        Jaut3 Jaut3 = new Jaut3();
 
 	        }
 		if(e.getSource()==b2) {
@@ -88,7 +88,7 @@ public class Jaut1 extends JFrame implements ActionListener{
 		
 	}
 	public static void main(String[] args) {
-		Jaut1 Jaut1 = new Jaut1();
+		Jaut4 Jaut4 = new Jaut4();
 		
 		
 	}
