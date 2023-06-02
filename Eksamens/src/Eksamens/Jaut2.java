@@ -21,7 +21,7 @@ public class Jaut2 extends JFrame implements ActionListener{
 	JPanel panel1=new JPanel();
 	JPanel panel2=new JPanel();
 	JPanel panel3=new JPanel();
-	JPanel panel4=new JPanel();
+	JPanel answer=new JPanel();
 	String izvele;
 	Jaut2() {
 		frame = new JFrame();
@@ -59,10 +59,10 @@ public class Jaut2 extends JFrame implements ActionListener{
 			
 			image4 = new ImageIcon(getClass().getResource("/Bildes/Atbilde4(Jaut2).png"));
 			displayField4 = new JLabel(image4);
-			panel4.add(displayField4);
-			panel4.setVisible(true);
+			answer.add(displayField4);
+			answer.setVisible(true);
 			
-			panel4.setBounds(425, 580, 295, 100);
+			answer.setBounds(425, 580, 295, 100);
 			
 			
 		     
@@ -110,7 +110,7 @@ public class Jaut2 extends JFrame implements ActionListener{
         frame.add(panel1);  
         frame.add(panel2); 
         frame.add(panel3); 
-        frame.add(panel4); 
+        frame.add(answer); 
         frame.add(displayField);
         frame.setSize(800, 800);
 		frame.setVisible(true);

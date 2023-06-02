@@ -11,25 +11,25 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Jaut3 extends JFrame implements ActionListener{
+public class Jaut8 extends JFrame implements ActionListener{
 	JFrame frame;
 	ImageIcon image;
 	JLabel displayField;
-	JButton b1=new JButton("m m m m");
-	JButton b2=new JButton("aaa");
-	JButton b3=new JButton("<html>aaa<br>aaa</html>");
-	JButton b4=new JButton("<html>m m m m<br>aaa</html>");
+	JButton b1=new JButton("1");
+	JButton b2=new JButton("2");
+	JButton b3=new JButton("nevienu");
+	JButton b4=new JButton("∞");
 	JPanel answer=new JPanel();
 	String izvele;
-	Jaut3() {
+	Jaut8() {
 		frame = new JFrame();
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-			image = new ImageIcon(getClass().getResource("/bildes/Jaut3.png"));
+			image = new ImageIcon(getClass().getResource("/bildes/Jaut8.png"));
 			displayField = new JLabel(image);
 		
-			answer.setBounds(55, 450, 315, 113);
+			answer.setBounds(425, 577, 315, 113);
 
 		     
         b1.setBounds(55, 450, 315, 113);
@@ -41,12 +41,12 @@ public class Jaut3 extends JFrame implements ActionListener{
         b2.setOpaque(false);
         b2.setFont(new Font("Arial", Font.ITALIC, 30));
         
-        b3.setBounds(55, 600, 315, 113);
+        b3.setBounds(55, 577, 315, 113);
         b3.setOpaque(false);
         b3.setFont(new Font("Arial", Font.ITALIC, 30));
         
        
-        b4.setBounds(425, 600, 315, 113);
+        b4.setBounds(425, 577, 315, 113);
         b4.setOpaque(false);
         b4.setFont(new Font("Arial", Font.ITALIC, 30));
         
@@ -79,7 +79,7 @@ public class Jaut3 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
 	        frame.dispose();
-	        Jaut3 Jaut3 = new Jaut3();
+	        Jaut8 Jaut8 = new Jaut8();
 
 	        }
 		if(e.getSource()==b2) {
@@ -88,7 +88,7 @@ public class Jaut3 extends JFrame implements ActionListener{
 		
 	}
 	public static void main(String[] args) {
-		Jaut3 Jaut3 = new Jaut3();
+		Jaut8 Jaut8 = new Jaut8();
 		
 		
 	}

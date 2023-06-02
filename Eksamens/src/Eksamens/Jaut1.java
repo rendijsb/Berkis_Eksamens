@@ -19,7 +19,7 @@ public class Jaut1 extends JFrame implements ActionListener{
 	JButton b2=new JButton("do{while();");
 	JButton b3=new JButton("do{}while();");
 	JButton b4=new JButton("do{}while;");
-	JPanel panel=new JPanel();
+	JPanel answer=new JPanel();
 	String izvele;
 	Jaut1() {
 		frame = new JFrame();
@@ -29,7 +29,7 @@ public class Jaut1 extends JFrame implements ActionListener{
 			image = new ImageIcon(getClass().getResource("/bildes/Jaut1.png"));
 			displayField = new JLabel(image);
 		
-			panel.setBounds(55, 577, 315, 113);
+			answer.setBounds(55, 577, 315, 113);
 
 		     
         b1.setBounds(55, 377, 315, 113);
@@ -64,8 +64,8 @@ public class Jaut1 extends JFrame implements ActionListener{
         
         frame.add(b1);
       
-        panel.setBackground(Color.GREEN);
-        frame.add(panel);  
+        answer.setBackground(Color.GREEN);
+        frame.add(answer);  
         frame.add(displayField);
         frame.setSize(800, 800);
 		frame.setVisible(true);
