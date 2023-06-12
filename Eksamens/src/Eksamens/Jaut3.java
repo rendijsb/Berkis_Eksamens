@@ -24,8 +24,8 @@ public class Jaut3 extends JFrame implements ActionListener{
 	boolean jaut1, jaut2,jaut3;
 	Jaut3(boolean jaut1, boolean jaut2) {
 		frame = new JFrame();
-		jaut1=this.jaut1;
-		jaut2=this.jaut2;
+		this.jaut1=jaut1;
+		this.jaut2=jaut2;
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		

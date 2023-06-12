@@ -26,7 +26,7 @@ public class Jaut2 extends JFrame implements ActionListener{
 	boolean jaut2, jaut1;
 	Jaut2(boolean jaut1) {
 		frame = new JFrame();
-		jaut1=this.jaut1;
+		this.jaut1=jaut1;
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 			image = new ImageIcon(getClass().getResource("/Bildes/Jaut2.png"));
@@ -116,6 +116,7 @@ public class Jaut2 extends JFrame implements ActionListener{
         frame.setSize(800, 800);
 		frame.setVisible(true);
 		frame.setLocationRelativeTo(null);
+
          
 	}
 	

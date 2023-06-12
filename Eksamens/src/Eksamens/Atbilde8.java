@@ -34,7 +34,7 @@ public class Atbilde8 extends JFrame implements ActionListener{
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-			image = new ImageIcon(getClass().getResource("/bildes/Atbilde7.png"));
+			image = new ImageIcon(getClass().getResource("/bildes/Atbilde8.png"));
 			displayField = new JLabel(image);
 			
 				pareizs=new JLabel("<html>Apsveicu! Jūs atbildējāt pareizi!\n"

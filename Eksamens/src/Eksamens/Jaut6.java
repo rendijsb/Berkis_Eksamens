@@ -86,22 +86,22 @@ public class Jaut6 extends JFrame implements ActionListener{
 		if(e.getSource()==b1) {
 	        frame.dispose();
 	        jaut6=false;
-	        Atbilde6 Atbilde6 = new Atbilde6(jaut1, jaut2, jaut3,jaut4, jaut5, jaut6);
+	        Atbilde6 Atbilde6 = new Atbilde6(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6);
 	        }
 		if(e.getSource()==b2) {
 	        frame.dispose();
 	        jaut6=false;
-	        Atbilde6 Atbilde6 = new Atbilde6(jaut1, jaut2, jaut3,jaut4, jaut5, jaut6);
+	        Atbilde6 Atbilde6 = new Atbilde6(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6);
 		}
 		if(e.getSource()==b3) {
 	        frame.dispose();
 	        jaut6=false;
-	        Atbilde6 Atbilde6 = new Atbilde6(jaut1, jaut2, jaut3,jaut4, jaut5, jaut6);
+	        Atbilde6 Atbilde6 = new Atbilde6(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6);
 		}
 		if(e.getSource()==b4) {
 	        frame.dispose();
 	        jaut6=true;
-	        Atbilde6 Atbilde6 = new Atbilde6(jaut1, jaut2, jaut3,jaut4, jaut5, jaut6);
+	        Atbilde6 Atbilde6 = new Atbilde6(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6);
 		}
 		
 	}

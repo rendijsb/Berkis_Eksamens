@@ -24,6 +24,15 @@ public class Jaut10 extends JFrame implements ActionListener{
 	boolean jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7, jaut8, jaut9, jaut10;
 	Jaut10(boolean jaut1, boolean jaut2, boolean jaut3, boolean jaut4, boolean jaut5, boolean jaut6, boolean jaut7, boolean jaut8, boolean jaut9) {
 		frame = new JFrame();
+		this.jaut1=jaut1;
+		this.jaut2=jaut2;
+		this.jaut3=jaut3;
+		this.jaut4=jaut4;
+		this.jaut5=jaut5;
+		this.jaut6=jaut6;
+		this.jaut7=jaut7;
+		this.jaut8=jaut8;
+		this.jaut9=jaut9;
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		

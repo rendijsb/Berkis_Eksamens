@@ -30,7 +30,7 @@ public class Atbilde1 extends JFrame implements ActionListener{
 			image = new ImageIcon(getClass().getResource("/bildes/Atbilde1.png"));
 			displayField = new JLabel(image);
 			
-				pareizs=new JLabel("<html>Apsveicu! Jūs atbildējāt pareizi!\n"
+				pareizs=new JLabel("<html>Apsveicu! Jūs atbildējāt pareizi!"
 						+ "<br>Pareizā atbilde patiešām bija:<html>");  
 			    pareizs.setBounds(150,100, 500,80);  
 			    pareizs.setFont(new Font("Arial", Font.ITALIC, 35));
@@ -64,7 +64,6 @@ public class Atbilde1 extends JFrame implements ActionListener{
         frame.setSize(800, 800);
 		frame.setVisible(true);
 		frame.setLocationRelativeTo(null);
-         
 	}
 	
 	
