@@ -80,7 +80,7 @@ public class Jaut9 extends JFrame implements ActionListener{
         frame.setSize(800, 800);
 		frame.setVisible(true);
 		frame.setLocationRelativeTo(null);
-         System.out.println(jaut1);
+  
 	}
 	
 	
