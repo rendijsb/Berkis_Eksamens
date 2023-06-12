@@ -14,6 +14,7 @@
 - [x] Beigu ekrāns
 
 **Ko apgūsiet:**:mortar_board:
+
 :white_check_mark: Kā strādā pēcnosacījuma cikls
 :white_check_mark: Kā pareizi uztaisīt pēcnosacījuma ciklu
 :white_check_mark: Mācēsiet nolasīt programmā kļūdas saistībā ar pēcnosacījuma ciklu
