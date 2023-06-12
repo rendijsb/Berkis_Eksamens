@@ -52,34 +52,34 @@ public class Beigas extends JFrame implements ActionListener{
 		
 		
 		jautajums1.setBounds(30, 150, 700, 50);
-        jautajums1.setFont(new Font("Arial", Font.ITALIC, 30));
+        jautajums1.setFont(new Font("Arial", Font.ITALIC, 25));
         
         jautajums2.setBounds(30, 190, 700, 50);
-        jautajums2.setFont(new Font("Arial", Font.ITALIC, 30));
+        jautajums2.setFont(new Font("Arial", Font.ITALIC, 25));
         
         jautajums3.setBounds(30, 230, 700, 50);
-        jautajums3.setFont(new Font("Arial", Font.ITALIC, 30));
+        jautajums3.setFont(new Font("Arial", Font.ITALIC, 25));
         
         jautajums4.setBounds(30, 270, 700, 50);
-        jautajums4.setFont(new Font("Arial", Font.ITALIC, 30));
+        jautajums4.setFont(new Font("Arial", Font.ITALIC, 25));
         
         jautajums5.setBounds(30, 310, 700, 50);
-        jautajums5.setFont(new Font("Arial", Font.ITALIC, 30));
+        jautajums5.setFont(new Font("Arial", Font.ITALIC, 25));
         
         jautajums6.setBounds(30, 350, 700, 50);
-        jautajums6.setFont(new Font("Arial", Font.ITALIC, 30));
+        jautajums6.setFont(new Font("Arial", Font.ITALIC, 25));
         
         jautajums7.setBounds(30, 390, 720, 50);
-        jautajums7.setFont(new Font("Arial", Font.ITALIC, 30));
+        jautajums7.setFont(new Font("Arial", Font.ITALIC, 25));
         
         jautajums8.setBounds(30, 430, 700, 50);
-        jautajums8.setFont(new Font("Arial", Font.ITALIC, 30));
+        jautajums8.setFont(new Font("Arial", Font.ITALIC, 25));
         
         jautajums9.setBounds(30, 470, 700, 50);
-        jautajums9.setFont(new Font("Arial", Font.ITALIC, 30));
+        jautajums9.setFont(new Font("Arial", Font.ITALIC, 25));
         
         jautajums10.setBounds(30, 510, 700, 50);
-        jautajums10.setFont(new Font("Arial", Font.ITALIC, 30));
+        jautajums10.setFont(new Font("Arial", Font.ITALIC, 25));
         
         Pareizi.setBounds(30, 300, 700, 60);
         Pareizi.setFont(new Font("Arial", Font.ITALIC, 40));
