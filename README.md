@@ -1,9 +1,9 @@
 # Berkis_Eksamens
-**Uzdevumu saraksts:**:computer:
+# Uzdevumu saraksts::computer:
 - [x] Mācību materiāla izveide
 - [x] UML diagrammas izvede
 
-**Testa izveides uzdevumi:**:paperclip:
+# Testa izveides uzdevumi::paperclip:
 - [x] Bilžu izstrāde
 - [x] Sākuma ekrāns
 - [x] Noteikumi
@@ -13,10 +13,10 @@
 - [x] Punktu skaita izvade
 - [x] Beigu ekrāns
 
-**Ko apgūsiet:**:mortar_board:
-:white_check_mark: Kā strādā pēcnosacījuma cikls
-:white_check_mark: Kā pareizi uztaisīt pēcnosacījuma ciklu
-:white_check_mark: Mācēsiet nolasīt programmā kļūdas saistībā ar pēcnosacījuma ciklu
+# Ko apgūsiet:**:mortar_board:
+- [x] Kā strādā pēcnosacījuma cikls
+- [x] Kā pareizi uztaisīt pēcnosacījuma ciklu
+- [x] Mācēsiet nolasīt programmā kļūdas saistībā ar pēcnosacījuma ciklu
 
 # Mācību materiāls:orange_book:
 https://github.com/rendijsb/Berkis_Eksamens/tree/main/M%C4%81c%C4%ABbu%20materi%C4%81ls
