@@ -19,8 +19,8 @@ public class Jaut1 extends JFrame implements ActionListener{
 	JButton b2=new JButton("do{while();");
 	JButton b3=new JButton("do{}while();");
 	JButton b4=new JButton("do{}while;");
-	JPanel answer=new JPanel();
 	String izvele;
+	boolean jaut1;
 	Jaut1() {
 		frame = new JFrame();
 		
@@ -29,7 +29,6 @@ public class Jaut1 extends JFrame implements ActionListener{
 			image = new ImageIcon(getClass().getResource("/bildes/Jaut1.png"));
 			displayField = new JLabel(image);
 		
-			answer.setBounds(55, 577, 315, 113);
 
 		     
         b1.setBounds(55, 377, 315, 113);
@@ -64,8 +63,6 @@ public class Jaut1 extends JFrame implements ActionListener{
         
         frame.add(b1);
       
-        answer.setBackground(Color.GREEN);
-        frame.add(answer);  
         frame.add(displayField);
         frame.setSize(800, 800);
 		frame.setVisible(true);
@@ -79,18 +76,31 @@ public class Jaut1 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
 	        frame.dispose();
-	        Jaut1 Jaut1 = new Jaut1();
-
+	        jaut1=false;
+	        Atbilde1 Atbilde1 = new Atbilde1(jaut1);
 	        }
 		if(e.getSource()==b2) {
 	        frame.dispose();
+	        jaut1=false;
+	        Atbilde1 Atbilde1 = new Atbilde1(jaut1);
+	        
+		}
+		if(e.getSource()==b3) {
+	        frame.dispose();
+	        jaut1=true;
+	        Atbilde1 Atbilde1 = new Atbilde1(jaut1);
+		}
+		if(e.getSource()==b4) {
+	        frame.dispose();
+	        jaut1=false;
+	        Atbilde1 Atbilde1 = new Atbilde1(jaut1);
 		}
 		
 	}
-	public static void main(String[] args) {
-		Jaut1 Jaut1 = new Jaut1();
-		
-		
-	}
+//	public static void main(String[] args) {
+//		Jaut1 Jaut1 = new Jaut1();
+//		
+//		
+//	}
 
 }

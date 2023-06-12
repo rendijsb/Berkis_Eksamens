@@ -21,8 +21,13 @@ public class Jaut5 extends JFrame implements ActionListener{
 	JButton b4=new JButton("∞");
 	JPanel answer=new JPanel();
 	String izvele;
-	Jaut5() {
+	boolean jaut1, jaut2, jaut3, jaut4, jaut5;
+	Jaut5(boolean jaut1, boolean jaut2, boolean jaut3, boolean jaut4) {
 		frame = new JFrame();
+		this.jaut1=jaut1;
+		this.jaut2=jaut2;
+		this.jaut3=jaut3;
+		this.jaut4=jaut4;
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
@@ -79,18 +84,30 @@ public class Jaut5 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
 	        frame.dispose();
-	        Jaut5 Jaut5 = new Jaut5();
-
+	        jaut5=false;
+	        Atbilde5 Atbilde5 = new Atbilde5(jaut1, jaut2, jaut3,jaut4, jaut5);
 	        }
 		if(e.getSource()==b2) {
 	        frame.dispose();
+	        jaut5=true;
+	        Atbilde5 Atbilde5 = new Atbilde5(jaut1, jaut2, jaut3,jaut4, jaut5);
+		}
+		if(e.getSource()==b3) {
+	        frame.dispose();
+	        jaut5=false;
+	        Atbilde5 Atbilde5 = new Atbilde5(jaut1, jaut2, jaut3,jaut4, jaut5);
+		}
+		if(e.getSource()==b4) {
+	        frame.dispose();
+	        jaut5=false;
+	        Atbilde5 Atbilde5 = new Atbilde5(jaut1, jaut2, jaut3,jaut4, jaut5);
 		}
 		
 	}
-	public static void main(String[] args) {
-		Jaut5 Jaut5 = new Jaut5();
-		
-		
-	}
+//	public static void main(String[] args) {
+//		Jaut5 Jaut5 = new Jaut5();
+//		
+//		
+//	}
 
 }

@@ -23,9 +23,10 @@ public class Jaut2 extends JFrame implements ActionListener{
 	JPanel panel3=new JPanel();
 	JPanel answer=new JPanel();
 	String izvele;
-	Jaut2() {
+	boolean jaut2, jaut1;
+	Jaut2(boolean jaut1) {
 		frame = new JFrame();
-		
+		jaut1=this.jaut1;
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 			image = new ImageIcon(getClass().getResource("/Bildes/Jaut2.png"));
@@ -124,18 +125,30 @@ public class Jaut2 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
 	        frame.dispose();
-	        Jaut2 Jaut2 = new Jaut2();
-
+	        jaut2=false;
+	        Atbilde2 Atbilde2 = new Atbilde2(jaut1, jaut2);
 	        }
 		if(e.getSource()==b2) {
 	        frame.dispose();
+	        jaut2=false;
+	        Atbilde2 Atbilde2 = new Atbilde2(jaut1, jaut2);
+		}
+		if(e.getSource()==b3) {
+	        frame.dispose();
+	        jaut2=false;
+	        Atbilde2 Atbilde2 = new Atbilde2(jaut1, jaut2);
+		}
+		if(e.getSource()==b4) {
+	        frame.dispose();
+	        jaut2=true;
+	        Atbilde2 Atbilde2 = new Atbilde2(jaut1, jaut2);
 		}
 		
 	}
-	public static void main(String[] args) {
-		Jaut2 Jaut2 = new Jaut2();
-		
-		
-	}
+//	public static void main(String[] args) {
+//		Jaut2 Jaut2 = new Jaut2(jaut2);
+//		
+//		
+//	}
 
 }

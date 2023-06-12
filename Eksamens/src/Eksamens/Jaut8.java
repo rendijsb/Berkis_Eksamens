@@ -21,8 +21,17 @@ public class Jaut8 extends JFrame implements ActionListener{
 	JButton b4=new JButton("Jebkāds vesels skaitlis");
 	JPanel answer=new JPanel();
 	String izvele;
-	Jaut8() {
+	boolean jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7, jaut8;
+	Jaut8(boolean jaut1, boolean jaut2, boolean jaut3, boolean jaut4, boolean jaut5, boolean jaut6, boolean jaut7) {
 		frame = new JFrame();
+		this.jaut1=jaut1;
+		this.jaut2=jaut2;
+		this.jaut3=jaut3;
+		this.jaut4=jaut4;
+		this.jaut5=jaut5;
+		this.jaut6=jaut6;
+		this.jaut7=jaut7;
+		
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
@@ -79,18 +88,29 @@ public class Jaut8 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
 	        frame.dispose();
-	        Jaut8 Jaut8 = new Jaut8();
-
+	        jaut8=false;
+	        Atbilde8 Atbilde8 = new Atbilde8(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7, jaut8);
 	        }
 		if(e.getSource()==b2) {
 	        frame.dispose();
+	        jaut8=false;
+	        Atbilde8 Atbilde8 = new Atbilde8(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7, jaut8);
 		}
-		
+		if(e.getSource()==b3) {
+	        frame.dispose();
+	        jaut8=true;
+	        Atbilde8 Atbilde8 = new Atbilde8(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7, jaut8);
+		}
+		if(e.getSource()==b4) {
+	        frame.dispose();
+	        jaut8=false;
+	        Atbilde8 Atbilde8 = new Atbilde8(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7, jaut8);
+		}
 	}
-	public static void main(String[] args) {
-		Jaut8 Jaut8 = new Jaut8();
-		
-		
-	}
+//	public static void main(String[] args) {
+//		Jaut8 Jaut8 = new Jaut8();
+//		
+//		
+//	}
 
 }

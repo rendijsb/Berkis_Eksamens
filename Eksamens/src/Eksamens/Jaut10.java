@@ -21,7 +21,8 @@ public class Jaut10 extends JFrame implements ActionListener{
 	JButton b4=new JButton("<html>Programma strādās līdz ievadīs<br>ciparu pirmajā ievades laukā<html>");
 	JPanel answer=new JPanel();
 	String izvele;
-	Jaut10() {
+	boolean jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7, jaut8, jaut9, jaut10;
+	Jaut10(boolean jaut1, boolean jaut2, boolean jaut3, boolean jaut4, boolean jaut5, boolean jaut6, boolean jaut7, boolean jaut8, boolean jaut9) {
 		frame = new JFrame();
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -79,18 +80,24 @@ public class Jaut10 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
 	        frame.dispose();
-	        Jaut10 Jaut10 = new Jaut10();
-
+	        jaut10=true;
+	        Atbilde10 Atbilde10 = new Atbilde10(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7, jaut8, jaut9, jaut10);
 	        }
 		if(e.getSource()==b2) {
 	        frame.dispose();
+	        jaut10=false;
+	        Atbilde10 Atbilde10 = new Atbilde10(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7, jaut8, jaut9, jaut10);
 		}
-		
-	}
-	public static void main(String[] args) {
-		Jaut10 Jaut10 = new Jaut10();
-		
-		
-	}
+		if(e.getSource()==b3) {
+	        frame.dispose();
+	        jaut10=false;
+	        Atbilde10 Atbilde10 = new Atbilde10(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7, jaut8, jaut9, jaut10);
+		}
+		if(e.getSource()==b4) {
+	        frame.dispose();
+	        jaut10=false;
+	        Atbilde10 Atbilde10 = new Atbilde10(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7, jaut8, jaut9, jaut10);
+		}
 
+}
 }

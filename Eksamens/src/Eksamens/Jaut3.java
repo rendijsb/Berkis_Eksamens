@@ -21,8 +21,11 @@ public class Jaut3 extends JFrame implements ActionListener{
 	JButton b4=new JButton("<html>m m m m<br>aaa</html>");
 	JPanel answer=new JPanel();
 	String izvele;
-	Jaut3() {
+	boolean jaut1, jaut2,jaut3;
+	Jaut3(boolean jaut1, boolean jaut2) {
 		frame = new JFrame();
+		jaut1=this.jaut1;
+		jaut2=this.jaut2;
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
@@ -79,18 +82,30 @@ public class Jaut3 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
 	        frame.dispose();
-	        Jaut3 Jaut3 = new Jaut3();
-
+	        jaut3=true;
+	        Atbilde3 Atbilde3 = new Atbilde3(jaut1, jaut2, jaut3);
 	        }
 		if(e.getSource()==b2) {
 	        frame.dispose();
+	        jaut3=false;
+	        Atbilde3 Atbilde3 = new Atbilde3(jaut1, jaut2, jaut3);
+		}
+		if(e.getSource()==b3) {
+	        frame.dispose();
+	        jaut3=false;
+	        Atbilde3 Atbilde3 = new Atbilde3(jaut1, jaut2, jaut3);
+		}
+		if(e.getSource()==b4) {
+	        frame.dispose();
+	        jaut3=false;
+	        Atbilde3 Atbilde3 = new Atbilde3(jaut1, jaut2, jaut3);
 		}
 		
 	}
-	public static void main(String[] args) {
-		Jaut3 Jaut3 = new Jaut3();
-		
-		
-	}
+//	public static void main(String[] args) {
+//		Jaut3 Jaut3 = new Jaut3();
+//		
+//		
+//	}
 
 }

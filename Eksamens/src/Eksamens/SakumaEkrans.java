@@ -8,6 +8,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class SakumaEkrans extends JFrame implements ActionListener{
@@ -16,6 +17,7 @@ public class SakumaEkrans extends JFrame implements ActionListener{
 	JLabel displayField;
 	JButton b1=new JButton("Sākt testu");
 	JButton b2=new JButton("Beigt");
+	JButton b3=new JButton("Noteikumi");
 	JPanel panel=new JPanel();
 	String izvele;
 	SakumaEkrans() {
@@ -25,9 +27,7 @@ public class SakumaEkrans extends JFrame implements ActionListener{
 		
 			image = new ImageIcon(getClass().getResource("/bildes/SakumaEkrans.png"));
 			displayField = new JLabel(image);
-		
 		  
-        panel.setBounds(55, 577, 315, 113);   
 		     
         b1.setBounds(55, 577, 315, 113);
         b1.setOpaque(false);
@@ -37,9 +37,16 @@ public class SakumaEkrans extends JFrame implements ActionListener{
         b2.setBounds(425, 577, 315, 113);
         b2.setOpaque(false);
         b2.setFont(new Font("Arial", Font.ITALIC, 30));
+        
+        b3.setBounds(240, 450, 315, 113);
+        b3.setOpaque(false);
+        b3.setFont(new Font("Arial", Font.ITALIC, 30));
+        
         b1.addActionListener(this);
         b2.addActionListener(this);
+        b3.addActionListener(this);
         frame.add(b2);
+        frame.add(b3);
         
         
 //        b1.setContentAreaFilled(false);
@@ -65,6 +72,14 @@ public class SakumaEkrans extends JFrame implements ActionListener{
 	        }
 		if(e.getSource()==b2) {
 	        frame.dispose();
+		}
+		
+		if(e.getSource()==b3) {
+	        JOptionPane.showMessageDialog(null, "Tests sastāv no 10 jautājumiem.\n"
+	        		+ "Katram jautājumam ir 4 atbilžu varianti\n"
+	        		+ "Katram jautājumam ir 1 pareiza atbilde\n"
+	        		+ "Pareizā atbilde tiks izdrukāta uzreiz pēc atbilžu iesniegšanas\n"
+	        		+ "Jautājumi uz kuriem atbildēts nepareizi, tiks izdrukāti testa beigās","Noteikumi:", JOptionPane.INFORMATION_MESSAGE);
 		}
 		
 	}

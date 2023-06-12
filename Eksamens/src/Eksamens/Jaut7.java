@@ -23,9 +23,15 @@ public class Jaut7 extends JFrame implements ActionListener{
 	JPanel panel3=new JPanel();
 	JPanel panel4=new JPanel();
 	String izvele;
-	Jaut7() {
+	boolean jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7;
+	Jaut7(boolean jaut1, boolean jaut2, boolean jaut3, boolean jaut4, boolean jaut5, boolean jaut6) {
 		frame = new JFrame();
-		
+		this.jaut1=jaut1;
+		this.jaut2=jaut2;
+		this.jaut3=jaut3;
+		this.jaut4=jaut4;
+		this.jaut5=jaut5;
+		this.jaut6=jaut6;
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 			image = new ImageIcon(getClass().getResource("/Bildes/Jaut7.png"));
@@ -124,18 +130,30 @@ public class Jaut7 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
 	        frame.dispose();
-	        Jaut7 Jaut7 = new Jaut7();
-
+	        jaut7=false;
+	        Atbilde7 Atbilde7 = new Atbilde7(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7);
 	        }
 		if(e.getSource()==b2) {
 	        frame.dispose();
+	        jaut7=true;
+	        Atbilde7 Atbilde7 = new Atbilde7(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7);
+		}
+		if(e.getSource()==b3) {
+	        frame.dispose();
+	        jaut7=false;
+	        Atbilde7 Atbilde7 = new Atbilde7(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7);
+		}
+		if(e.getSource()==b4) {
+	        frame.dispose();
+	        jaut7=false;
+	        Atbilde7 Atbilde7 = new Atbilde7(jaut1, jaut2, jaut3, jaut4, jaut5, jaut6, jaut7);
 		}
 		
 	}
-	public static void main(String[] args) {
-		Jaut7 Jaut7 = new Jaut7();
-		
-		
-	}
+//	public static void main(String[] args) {
+//		Jaut7 Jaut7 = new Jaut7();
+//		
+//		
+//	}
 
 }
