@@ -11,44 +11,44 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Jaut8 extends JFrame implements ActionListener{
+public class Jaut9 extends JFrame implements ActionListener{
 	JFrame frame;
 	ImageIcon image;
 	JLabel displayField;
-	JButton b1=new JButton("Nekas nav jāmaina");
-	JButton b2=new JButton("Jebkāds reāls skaitlis");
-	JButton b3=new JButton("Jebkāds naturāls skaitlis");
-	JButton b4=new JButton("Jebkāds vesels skaitlis");
+	JButton b1=new JButton("12345");
+	JButton b2=new JButton("19046");
+	JButton b3=new JButton("64091");
+	JButton b4=new JButton("1, 9, 0, 4, 6");
 	JPanel answer=new JPanel();
 	String izvele;
-	Jaut8() {
+	Jaut9() {
 		frame = new JFrame();
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-			image = new ImageIcon(getClass().getResource("/bildes/Jaut8.png"));
+			image = new ImageIcon(getClass().getResource("/bildes/Jaut9.png"));
 			displayField = new JLabel(image);
 		
-			answer.setBounds(425, 577, 315, 113);
+			answer.setBounds(55, 577, 315, 113);
 
 		     
         b1.setBounds(55, 450, 315, 113);
         b1.setOpaque(false);
-        b1.setFont(new Font("Arial", Font.ITALIC, 25));
+        b1.setFont(new Font("Arial", Font.ITALIC, 30));
         
        
         b2.setBounds(425, 450, 315, 113);
         b2.setOpaque(false);
-        b2.setFont(new Font("Arial", Font.ITALIC, 25));
+        b2.setFont(new Font("Arial", Font.ITALIC, 30));
         
         b3.setBounds(55, 577, 315, 113);
         b3.setOpaque(false);
-        b3.setFont(new Font("Arial", Font.ITALIC, 25));
+        b3.setFont(new Font("Arial", Font.ITALIC, 30));
         
        
         b4.setBounds(425, 577, 315, 113);
         b4.setOpaque(false);
-        b4.setFont(new Font("Arial", Font.ITALIC, 25));
+        b4.setFont(new Font("Arial", Font.ITALIC, 30));
         
         b1.addActionListener(this);
         b2.addActionListener(this);
@@ -79,7 +79,7 @@ public class Jaut8 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
 	        frame.dispose();
-	        Jaut8 Jaut8 = new Jaut8();
+	        Jaut9 Jaut9 = new Jaut9();
 
 	        }
 		if(e.getSource()==b2) {
@@ -88,7 +88,7 @@ public class Jaut8 extends JFrame implements ActionListener{
 		
 	}
 	public static void main(String[] args) {
-		Jaut8 Jaut8 = new Jaut8();
+		Jaut9 Jaut9 = new Jaut9();
 		
 		
 	}
